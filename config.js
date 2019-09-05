@@ -1,6 +1,6 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter SolidState', // <title>
-  manifestName: 'SolidState',
+  siteTitle: 'Michael Michele Photography', // <title>
+  manifestName: 'Michael Michele',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
@@ -8,8 +8,8 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-solidstate/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  heading: 'Michael Michele',
+  subHeading: 'Photographer, Writer, and U.S. Navy Veteran',
   // social
   socialLinks: [
     {
