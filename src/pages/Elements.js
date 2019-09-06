@@ -310,15 +310,15 @@ const IndexPage = () => <Layout fullMenu>
 						<div className="box alt">
 							<div className="row gtr-uniform">
 								<div className="col-12"><span className="image fit"><img src={pic8} alt="" /></span></div>
-								<div className="col-4"><span className="image fit"><img src={pic5} alt="" /></span></div>
-								<div className="col-4"><span className="image fit"><img src={pic6} alt="" /></span></div>
-								<div className="col-4"><span className="image fit"><img src={pic7} alt="" /></span></div>
-								<div className="col-4"><span className="image fit"><img src={pic7} alt="" /></span></div>
-								<div className="col-4"><span className="image fit"><img src={pic5} alt="" /></span></div>
-								<div className="col-4"><span className="image fit"><img src={pic6} alt="" /></span></div>
-								<div className="col-4"><span className="image fit"><img src={pic6} alt="" /></span></div>
-								<div className="col-4"><span className="image fit"><img src={pic7} alt="" /></span></div>
-								<div className="col-4"><span className="image fit"><img src={pic5} alt="" /></span></div>
+								<div className="col-3-xlarge col-4-large col-6-medium col-12-small"><span className="image fit"><img src={pic5} alt="" /></span></div>
+								<div className="col-3-xlarge col-4-large col-6-medium col-12-small"><span className="image fit"><img src={pic6} alt="" /></span></div>
+								<div className="col-3-xlarge col-4-large col-6-medium col-12-small"><span className="image fit"><img src={pic7} alt="" /></span></div>
+								<div className="col-3-xlarge col-4-large col-6-medium col-12-small"><span className="image fit"><img src={pic7} alt="" /></span></div>
+								<div className="col-3-xlarge col-4-large col-6-medium col-12-small"><span className="image fit"><img src={pic5} alt="" /></span></div>
+								<div className="col-3-xlarge col-4-large col-6-medium col-12-small"><span className="image fit"><img src={pic6} alt="" /></span></div>
+								<div className="col-3-xlarge col-4-large col-6-medium col-12-small"><span className="image fit"><img src={pic6} alt="" /></span></div>
+								<div className="col-3-xlarge col-4-large col-6-medium col-12-small"><span className="image fit"><img src={pic7} alt="" /></span></div>
+								<div className="col-3-xlarge col-4-large col-6-medium col-12-small"><span className="image fit"><img src={pic5} alt="" /></span></div>
 							</div>
 						</div>
 						<h4>Left &amp; Right</h4>
