@@ -30,7 +30,7 @@ module.exports = {
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
+      url: 'mailto:michael.michele.photography@gmail.com',
     },
   ],
   phone: '000-00000',
