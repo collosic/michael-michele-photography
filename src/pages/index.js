@@ -1,15 +1,14 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import { Link } from 'gatsby';
+import AboutLink from '../components/AboutLink';
+import PhotosLink from '../components/PhotosLink';
+import Blog from '../components/BlogLink';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import pic4 from '../assets/images/pic04.jpg';
 import pic5 from '../assets/images/pic05.jpg';
 import pic6 from '../assets/images/pic06.jpg';
-import pic7 from '../assets/images/pic07.jpg';
 
 import config from '../../config';
 const IndexPage = () => (
@@ -25,44 +24,9 @@ const IndexPage = () => (
     </section>
 
     <section id="wrapper">
-      <section id="one" className="wrapper spotlight style1">
-        <div className="inner">
-          <Link to="/Photos" className="image">
-            <img src={pic1} alt="" />
-          </Link>
-          <div className="content">
-            <h2 className="major">
-              <Link to="/Photos">Photos</Link>
-            </h2>
-            <p>Take a look at my photos and see what I can do for you.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="two" className="wrapper alt spotlight style2">
-        <div className="inner">
-          <a href="/#" className="image">
-            <img src={pic2} alt="" />
-          </a>
-          <div className="content">
-            <h2 className="major">About</h2>
-            <p>A little something about who I am and where I came from.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="three" className="wrapper spotlight style3">
-        <div className="inner">
-          <a href="/#" className="image">
-            <img src={pic7} alt="" />
-          </a>
-          <div className="content">
-            <h2 className="major">Blog</h2>
-            <p>The thoughts of my endless running mind.</p>
-          </div>
-        </div>
-      </section>
-
+      <AboutLink />
+      <PhotosLink />
+      <Blog />
       <section id="contact-container" className="inner wrapper alt style1">
         <div className="inner">
           <h2 className="major">Contact Info</h2>

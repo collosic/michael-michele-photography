@@ -1,5 +1,9 @@
 const config = require('./config');
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
@@ -21,5 +25,12 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
   ],
 };
