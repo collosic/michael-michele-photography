@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-
 import Img from 'gatsby-image';
+import Gallery from 'react-grid-gallery';
 
 import Layout from '../components/Layout';
 
@@ -20,13 +20,14 @@ const IndexPage = () => {
     }
   `);
 
-  const images = data.allContentfulAsset.edges.map(edge => (
-    <div className="col-3-xlarge col-4-large col-6-medium">
-      <span className="image fit">
-        <Img sizes={{ ...edge.node.fluid, aspectRatio: 16 / 9 }} />
-      </span>
-    </div>
-  ));
+  const images = data.allContentfulAsset.edges.map(edge => {
+    return {
+      src: edge.node.fluid.src,
+      thumbnail: edge.node.fluid.src,
+      thumbnailWidth: 160,
+      thumbnalHeight: 90,
+    };
+  });
 
   return (
     <Layout fullMenu>
@@ -40,7 +41,14 @@ const IndexPage = () => {
         <div className="wrapper">
           <div className="inner">
             <div className="box alt">
-              <div className="row gtr-uniform">{images}</div>
+              <div className="row gtr-uniform">
+                <Gallery
+                  images={images}
+                  enableImageSelection={false}
+                  backdropClosesModal={true}
+                  margin={8}
+                />
+              </div>
             </div>
           </div>
         </div>
