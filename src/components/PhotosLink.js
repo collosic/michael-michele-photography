@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
-import pic2 from '../assets/images/pic02.jpg';
-
 const Photos = () => {
-  const [state, setState] = useState();
   const data = useStaticQuery(graphql`
     query {
       contentfulSections(title: { eq: "Photos Link" }) {

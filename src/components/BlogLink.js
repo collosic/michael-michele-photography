@@ -2,8 +2,6 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
-import pic7 from '../assets/images/pic07.jpg';
-
 const Blog = () => {
   const data = useStaticQuery(graphql`
     query {

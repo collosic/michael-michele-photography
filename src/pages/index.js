@@ -1,16 +1,11 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
 import AboutLink from '../components/AboutLink';
 import PhotosLink from '../components/PhotosLink';
 import Blog from '../components/BlogLink';
 
-import pic3 from '../assets/images/pic03.jpg';
-import pic4 from '../assets/images/pic04.jpg';
-import pic5 from '../assets/images/pic05.jpg';
-import pic6 from '../assets/images/pic06.jpg';
-
 import config from '../../config';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
