@@ -2,10 +2,10 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
-const Blog = () => {
+const Contact = () => {
   const data = useStaticQuery(graphql`
     query {
-      contentfulSections(title: { eq: "Blog Link" }) {
+      contentfulSections(title: { eq: "Contact Link" }) {
         body
         image {
           fluid {
@@ -19,12 +19,12 @@ const Blog = () => {
   return (
     <section id="three" className="wrapper spotlight style3">
       <div className="inner">
-        <Link to="/Blog" className="image">
+        <Link to="/Contact" className="image">
           <Img fluid={data.contentfulSections.image.fluid} />
         </Link>
         <div className="content">
           <h2 className="major">
-            <Link to="/Blog">Blog</Link>
+            <Link to="/Contact">Contact</Link>
           </h2>
           <p>{data.contentfulSections.body}</p>
         </div>
@@ -33,4 +33,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Contact;
