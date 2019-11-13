@@ -1,6 +1,6 @@
 # Michael Michele Photography
 
-Creatd this site for a fellow veteran in order to showcase his portfolio and have a personal site online.
+Created this site for a fellow veteran in order to showcase his portfolio and have a personal site online.
 
 Please visit the site using the following link:
 [Site](https://determined-darwin-10b115.netlify.com)
